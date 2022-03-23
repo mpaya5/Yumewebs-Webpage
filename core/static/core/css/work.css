@@ -1,0 +1,482 @@
+.work .arriba
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    background-color: #333;
+}
+
+.work .tituloWork
+{
+    padding: 100px 0px;
+    margin: 0px auto;
+    width: 100%;
+    color: white;
+}
+
+.work .tituloWork h2
+{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 20px 50px 20px;
+}
+
+.work .arriba button
+{
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: #1f5780;
+}
+
+.work .arriba button a
+{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.work .moreInfo .col-lg-6
+{
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+.work .workConcept
+{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    padding: 100px 0px;
+}
+
+.work .workConcept .linea
+{
+    content: "";
+    width: 4.8rem;
+    height: 2px;
+    background: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.work .workConcept .azul
+{
+    font-size: 4rem;
+    color: #1f5780;
+    position: relative;
+    padding-right: 3.2rem;
+    padding-left: 6.2rem;
+}
+
+.work .left
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.work .alCentro
+{
+    display: flex;
+    align-items: center;
+}
+
+.work .alCentro h3
+{
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.work .col-lg-7
+{
+    max-width: 750px;
+}
+
+.work .col-lg-7 p
+{
+    text-align: justify;
+}
+
+.work .mockup
+{
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.work .mockup img
+{
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.work .full-page
+{
+    background-color: #f0f0f0;
+    padding-top: 200px;
+}
+
+.work .full-page .centrar
+{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+.work .full-page .col-lg-6 img
+{
+    width: 100%;
+}
+
+.go-back
+{
+    padding:100px 20px;
+    text-align: center;
+}
+
+.go-back a
+{
+    color: #333;
+    text-decoration: none;
+}
+
+/***************************************************************/
+
+.portf
+{
+    background-color: white;
+}
+
+.portf .portfTop
+{
+    padding: 100px 0px;
+}
+
+.portf .portfTop h2
+{
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+}
+
+
+
+/*******OTRO WORKS**********/
+
+.portfAll .cubre
+{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+.portfAll .box-content
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 540px;
+    height: 396px;
+}
+
+.portfAll .transformate
+{
+    transform: translateY(-198px);
+}
+
+.portfAll .box-content button
+{
+    padding: 10px 20px;
+    background-color:#1f5780;
+    border: none;
+    border-radius: 10px;
+}
+
+.portfAll .box-content button a
+{
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.portfAll .box-content .texto
+{
+    color: white;
+    transform: translate(25px, 130px);
+}
+
+.portfAll .box-content .texto h5
+{
+    font-size: 2rem;
+}
+
+.portfAll .box-content .texto p
+{
+    font-size: 1.25rem;
+}
+
+@media(max-width:1200px)
+{
+    .portfAll .box-content
+    {
+        width: 465px;
+        height: 318.5px;
+    }
+
+    .portfAll .col-lg-12
+    {
+        padding: 0px;
+        margin: 0px auto;
+    }
+}
+
+@media(max-width:990px)
+{
+    .portfAll .col-lg-6
+    {
+        flex: 0 0 50%;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .portfAll .box-content
+    {
+        width: 345px;
+        height: 336.5px;
+    }
+    .portfAll .box-content .texto h5 {
+        font-size: 1.5rem;
+    }
+    .portfAll .box-content .texto p {
+        font-size: 1rem;
+    }
+    
+}
+
+@media(max-width:778px)
+{
+    .portfAll .box-content {
+        width: 320px;
+        height: 336.5px;
+    }
+
+    .portfAll .container
+    {
+        max-width: 640px;
+        padding: 0px;
+    }
+}
+
+@media(max-width:660px)
+{
+    .portfAll .container
+    {
+        max-width: 540px;
+        padding: 0px;
+    }
+    .portfAll .box-content .texto h5 {
+        font-size: 1.5rem;
+        padding-right: 20px;
+    }
+
+    .portfAll .box-content {
+        width: 270px;
+        height: 330.5px;
+    }
+}
+
+@media(max-width:600px)
+{
+
+    .portfAll .box-content {
+        width: 100%;
+        height: 320px;
+        margin-bottom: 30px;
+        background-size: contain;
+    }
+
+    .portfAll .col-lg-6 {
+        flex: 0 0 100%;
+        transform: translateY(0px);
+    }
+
+    .portfAll .container
+    {
+        width: 85%;
+    }
+    .portfAll .cubre
+    {
+        width: 100%;
+    }
+    
+}
+    @media(max-width:440px)
+    {
+        .portf .portfTop h2
+        {
+            font-size: 2.25rem;
+        }
+    }
+
+
+
+/*****************************************/
+@media(max-width:1210px)
+{
+    .work .col-lg-7
+    {
+        flex: 0 0 100%;
+        margin: 0px auto;
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width:991px)
+{
+    .work .col-lg-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .work .col-lg-3 {
+        -ms-flex: 0 0 83%;
+        flex: 0 0 83%;
+        max-width: 83%;
+    }
+
+    .work .alCentro h3
+    {
+        margin: 0px auto;
+    }
+
+    .work .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .work .row
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+}
+
+
+
+@media(max-width:780px)
+{
+    .work .mockup img {
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .work .arriba .col-lg-6
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width:668px)
+{
+    .work .full-page {
+        background-color: #f0f0f0;
+        padding-top: 100px;
+    }
+}
+
+@media(max-width:616px)
+{
+    .work .alCentro h3 {
+        /* margin: 0px auto; */
+        /* text-align: right; */
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media(max-width:520px)
+{
+    .work .workConcept .azul {
+        font-size: 3rem;
+        color: #1f5780;
+        position: relative;
+        padding-right: 3.2rem;
+        padding-left: 3.2rem;
+        margin-bottom: 0px;
+    }
+
+    .work .workConcept .linea {
+        content: "";
+        width: 2.8rem;
+        height: 2px;
+        background: #020b16;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .work .col-lg-7
+    {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:452px)
+{
+    .work .workTop h2
+    {
+        font-size: 3rem;
+    }
+
+
+
+    .work .alCentro h3
+    {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width:375px)
+{
+    .work .workConcept .linea {
+        content: "";
+        width: 1.8rem;
+    }
+
+    .work .workConcept .azul
+    {
+        font-size: 2rem;
+        padding-left: 2.2rem;
+    }
+}

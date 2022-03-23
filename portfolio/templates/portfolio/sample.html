@@ -1,0 +1,100 @@
+{% extends 'core/layout.html' %}
+
+{%block title%}{{work.title}}{%endblock%}
+
+{% block body %}
+
+<section class="work">
+    <div class="arriba row col-lg-12">
+        <div class="col-lg-6 tituloWork">
+            <h2>{{work.title}}</h2>
+            <div class="row col-lg-12 moreInfo">
+                <div class="col-lg-6">
+                    <div class="row col-lg-12">
+                        <div class="col-lg-12">
+                            <h4>Trabajo</h4>
+                        </div>
+                        <div class="col-lg-12">
+                            {{work.subtitle}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row col-lg-12">
+                        <div class="col-lg-12">
+                            <h4>Fecha</h4>
+                        </div>
+                        <div class="col-lg-12">
+                            {{work.fecha}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <button type="button"><a href="{{work.url}}">Visita la web</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" style="padding: 0px;">
+            <div class="img-portafolio">
+                <img src="{{work.image.url}}" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <div class="workConcept">
+        <!-- <div class="container"> -->
+        <div class="row col-lg-12">
+            <div class="col-lg-2 left">
+                <p class="azul"><span class="linea"></span> 01</p>
+            </div>
+            <div class="col-lg-3 alCentro">
+                <h3>Concepto</h3>
+            </div>
+            <div class="col-lg-7">
+                <p>{{work.concept}}</p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <div class="mockup">
+        <img src="{{work.mockup.url}}" alt="" srcset="">
+    </div>
+
+    <div class="workConcept">
+        <div class="row col-lg-12">
+            <div class="col-lg-2 left">
+                <p class="azul"><span class="linea"></span> 02</p>
+            </div>
+            <div class="col-lg-3 alCentro">
+                <h3>Desarrollo</h3>
+            </div>
+            <div class="col-lg-7">
+                <p>{{work.development}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-page">
+        <div class="row col-lg-12" style="    padding-right: 0px !important;">
+            {% if work.page2 %}
+                <div class="col-lg-6 centrar">
+                    <img src="{{work.page1.url}}" alt="">
+                </div>
+                <div class="col-lg-6 centrar">
+                    <img src="{{work.page2.url}}" alt="">
+                </div>
+            {% else %}
+                <div class="col-lg-12 centrar">
+                    <img src="{{work.page1.url}}" width="100%" alt="">
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="go-back">
+        <h4><a href="{% url 'works'%}">VOLVER AL PORTAFOLIO</a></h4>
+    </div>
+</section>
+
+{%endblock%}

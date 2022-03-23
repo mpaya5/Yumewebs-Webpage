@@ -1,0 +1,33 @@
+{% extends 'core/layout.html' %}
+
+{%block title%}Blog{%endblock%}
+
+{% block body %}
+
+<div id="blog">
+    <div class="container">
+        <h3>BLOG</h3>
+
+        <div class="posts">
+            <div class="row col-lg-12">
+                {% load posts_extras %}
+                {% get_post_list as post_list %}
+                {% for post in post_list %}
+                <div class="row col-lg-12 entrada">
+                    <div class="col-lg-6">
+                        <img src="{{post.image.url}}" alt="">
+                    </div>
+                    <div class="col-lg-6 texto">
+                        <h4 class="titulo">{{post.title}}</h4>
+                        <p>{{post.content|safe|truncatechars:200}} </p>
+                        <a href="{% url 'post' post.id %}">Leer más</a>
+                    </div>
+                </div>
+                            
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

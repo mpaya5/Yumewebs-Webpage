@@ -1,0 +1,33 @@
+{% extends 'core/layout.html' %}
+
+{%block title%}Contacto{%endblock%}
+
+{% block body %}
+
+<section  class="contact stars" style="background: #333;">
+    <div class="container margin">
+        <h3>Contacto</h3>
+                <div class="border" style="margin-bottom: 0px;">
+                    <span></span>
+                    <span class="js-letter"></span>
+                </div>
+            <h4>¿Tienes algún proyecto en mente?</h4>
+            <h5>CONTACTA CONMIGO</h5>
+            <hr color="white">
+            <p>+34 722 27 87 13</p>
+            <p>yumewebs@gmail.com</p>
+            <div class="bg-contact">
+                <p class="hablemos">HABLEMOS</p>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {{form.as_p}}
+                    </table>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            
+        </div>
+</section>
+
+{%endblock%}

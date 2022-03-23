@@ -1,0 +1,14 @@
+{% extends 'core/layout.html' %}
+
+{% block body %}
+<div class="paper">
+    <div class="text-center">
+        <h2 class="m-auto">{{page.title}}</h2>
+        <h4><span class="blanc-space ng-binding">www.naecoer.com</span></h4>
+    </div>
+    <div class="container text-left content">
+        {{page.content|safe}}
+    </div>
+</div>
+
+{% endblock %}

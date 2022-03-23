@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{%block title%}{{post.title}}{%endblock%}
+
+{% block body %}
+
+<div id="post">
+    <div class="row col-lg-12">
+        <div class="col-lg-6">
+            <h2>{{post.title}}</h2>
+        </div>
+        {%load static%}
+        <div class="col-lg-6">
+            <img width="100%"src="{{post.image.url}}" alt="">
+        </div>
+    </div>
+    <div class="entrada">
+        <div class="container">
+            {{post.content|safe}}
+        </div>
+    </div>
+</div>
+
+
+<div class="go-back">
+    <h4><a href="{% url 'blog'%}">VOLVER AL BLOG</a></h4>
+</div>
+</section>
+
+
+{%endblock%}

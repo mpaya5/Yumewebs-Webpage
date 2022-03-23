@@ -1,0 +1,65 @@
+{% extends 'core/layout.html' %}
+
+{%block title%}Sobre mi{%endblock%}
+
+{% block body %}
+
+<section id="about-content">
+    <div class="container">
+        <h3>Sobre mí</h3>
+        <div class="row col-lg-12">
+            <div class="col-lg-6">
+                <p>¡Hola! Me llamo <span href="#" class="blue">Miguel Payá</span>, soy programador y backend developer.
+                </p>
+                <p>Yumewebs es el alias que uso para mostrar mis proyectos y trabajos realizados hasta la fecha.
+                    ¿Por
+                    qué <strong>Yumewebs</strong>? La palabra <strong>Yume</strong> es una palabra japonesa cuyo
+                    significado es sueño.</p>
+                <p>
+                    A lo largo de los años he probado diferentes oficios, desde camarero hasta podador de palmeras. Cuándo
+                    volví en 2019 de un EVS de 9 meses en Rumanía, tuve la suerte de conocer el mundo de la programación
+                    y empecé a investigar y a estudiar poco a poco diferentes lenguajes de programación, a hacer varios 
+                    proyectos personales y a hacer webs a diferentes empresas.
+                </p>
+                <p>A día de hoy sigo estudiando y probando nuevas tecnologias, prefiriendo mayormente el backend frente al frontend.</p>
+            </div>
+            <div class="col-lg-6" style="    display: block;
+            margin: 0px auto;
+            text-align: center;">
+                {% load static %}
+                <img src="{% static 'core/img/yo.png' %}" height="500vh"alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cv">
+    <div class="container">
+        <h4>Descarga mi CV</h4>
+        <div class="row col-lg-12">
+            <div class="col-lg-6">
+                <div class="row col-lg-12">
+                    <div class="col-lg-12">
+                        <p>Español</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <button type="button"><a href="https://drive.google.com/file/d/1dnAILnMl_zK1Tl-0sm-17l66FRtv5CL0/view?usp=sharing" download="Cv-MiguelPaya-Spanish">Descargar Archivo</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row col-lg-12">
+                    <div class="col-lg-12">
+                        <p>English</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <button type="button"><a href="https://drive.google.com/file/d/1dLdgqjz89M0vLkoa1qmsn2tXCFAELwGT/view?usp=sharing" download="Cv-MiguelPaya-English">Download File</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+{% endblock %}
